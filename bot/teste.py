@@ -57,5 +57,11 @@ https://www.latex-project.org/help/documentation/amsldoc.pdf
         # Jogando o lixo fora
         del msg_texto, resposta
 
+    async def on_member_join(self, member):
+        await member.create_dm()
+        await member.dm_channel.send(
+            f'Olá {member.name}, bem-vindo(a) ao server!'
+        )
+
 client = CustomClient()
 client.run(TOKEN)
