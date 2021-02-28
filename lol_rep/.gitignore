@@ -1,0 +1,5 @@
+$ cat .gitignore
+*.env
+*~
+__pycache__/
+img/
